@@ -104,7 +104,51 @@
           </div>
         </div>
       </div>
-    </main>
 
+      <div id="toast-interactive"
+     class="fixed bottom-5 right-5 flex w-full max-w-xs items-start gap-4 rounded-lg bg-white p-4 shadow-md ring-1 ring-gray-200 dark:bg-gray-800 dark:ring-gray-700"
+     role="alert"
+     aria-live="assertive">
+
+    <!-- Icon (opcional) -->
+    <div class="flex-shrink-0">
+        <svg class="h-6 w-6 text-blue-600 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z"/>
+        </svg>
+    </div>
+
+    <!-- Content -->
+    <div class="flex-1 text-sm text-gray-700 dark:text-gray-300">
+        <p class="font-semibold text-gray-900 dark:text-white">Suscríbete ahora</p>
+        <p class="mb-2">Obtén beneficios de cliente premium y pro al suscribirte.</p>
+
+        <div class="grid grid-cols-2 gap-2">
+            <a href="#"
+               class="inline-flex w-full justify-center rounded-md bg-blue-600 px-3 py-1.5 text-xs font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800">
+                Sí, quiero
+            </a>
+            <a href="#"
+               class="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-3 py-1.5 text-xs font-medium text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+                No ahora
+            </a>
+        </div>
+    </div>
+
+    <!-- Close button -->
+    <button type="button"
+            class="ml-auto inline-flex h-6 w-6 items-center justify-center rounded-md text-gray-400 hover:bg-gray-100 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
+            data-dismiss-target="#toast-interactive"
+            aria-label="Cerrar">
+        <svg class="h-3 w-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M1 1l6 6m0 0l6 6M7 7l6-6M7 7L1 13"/>
+        </svg>
+    </button>
+</div>
+
+    </main>
+    <script type = "module" src="./src/file01.js"></script>
   </body>
 </html>
